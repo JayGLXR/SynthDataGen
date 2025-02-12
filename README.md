@@ -73,30 +73,6 @@ Use the `--help` flag to view all available command-line options.
 
 SynthDataGen is highly configurable. You can define your data schema and generation rules in a configuration file (e.g., YAML or JSON).
 
-### Sample YAML Configuration (`config.yaml`):
-
-```yaml
-# Define the schema for your synthetic data
-schema:
-  - name: id
-    type: integer
-    range: [1, 1000]
-  - name: username
-    type: string
-    pattern: 'user_[a-zA-Z0-9]{5}'
-  - name: email
-    type: string
-    format: email
-
-# Generation settings
-settings:
-  num_records: 1000
-  seed: 42  # Optional seed for reproducibility
-  output_format: csv
-```
-
-Modify the configuration to suit your data generation needs.
-
 ## Testing
 
 Run the tests to ensure everything is working correctly:
